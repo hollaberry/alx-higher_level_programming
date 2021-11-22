@@ -1,5 +1,6 @@
-#!/usr/bin/python3
+!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    matrix = np.array(matrix)
-    output = text[].reshape((3, 3))
-    return output
+    for row in matrix:
+        for col in row:
+            print("{:d}".format(col), end=" " if col != row[-1] else "")
+        print()
