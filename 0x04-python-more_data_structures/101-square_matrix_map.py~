@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+def square_matrix_map(matrix=[]):
+    for row in matrix:
+        for col in row:
+            new_mat = list(map(lambda new: new * 2, matrix))
+    return new_mat
