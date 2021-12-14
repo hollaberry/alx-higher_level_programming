@@ -32,10 +32,8 @@ class Square:
 
     """Create public instance method: my_print
     prints square with # character"""
-
     def my_print(self):
         if self.__size == 0:
             print("")
-        new_value = self.__size
-        for i in range(new_value):
+        for i in range(self.__size):
             print("#" * self.__size)
