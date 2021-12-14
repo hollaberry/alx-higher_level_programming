@@ -5,7 +5,6 @@
 class Square:
     """Represent a square"""
 
-
     def __init__(self, size=0):
         """initialise a private instance attribute to define a square
         Raise the type or value error exception according to given condition"""

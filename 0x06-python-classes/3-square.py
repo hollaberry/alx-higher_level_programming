@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Write a class square"""
 
+
 class Square:
     """Represent a square"""
     def __init__(self, size=0):
@@ -15,4 +16,3 @@ class Square:
     """Create public instance method: def area(self)"""
     def area(self):
         return(self.__size ** 2)
-    
