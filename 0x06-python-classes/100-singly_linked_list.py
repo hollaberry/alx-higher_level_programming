@@ -10,9 +10,10 @@ class Node:
 
     @data.setter
     def data(self, value):
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("data must be an integer")
-        self.__data = value
+        else:
+            self.__data = value
 
     @property
     def next_node(self):
@@ -20,33 +21,41 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-        if not isinstance(value, Node) and value is not None:
+        if value is None or isinstance(value, Node):
+            self.__next_node = value
+        else:
             raise TypeError("next_node must be a Node object")
-        self.__next_node = value
 
 
 class SinglyLinkedList:
+
     def __init__(self):
         self.__head = None
 
     def sorted_insert(self, value):
-        if self.__head is None:
-            new = Node(value, None)
-            self.__head = new
-        else:
-            aux = self.__head
-            while aux.next_node is not None and value > aux.next_node.data:
-                aux = aux.next_node
-            if aux.data < value:
-                new = Node(value, aux.next_node)
-                aux.next_node = new
-            else:
-                new = Node(value, aux)
-                self.__head = new
+        if not self.__head:
+            self.__head = Node(value, self.__head)  # we initialize a new node
+            return None
+        if value < self.__head.data:  # if new data is less, it is new head
+            self.__head = Node(value, self.__head)
+            return None
+        # then if the data is greather
+        new_node = self.__head
+        while new_node.next_node and new_node.next_node.data < value:
+            """ while there is a next node and that data is less, then next """
+            new_node = new_node.next_node
+        new_node.next_node = Node(value, new_node.next_node)
 
     def __str__(self):
-        s = ""
-        while self.__head is not None:
-            s = s + str(self.__head.data) + "\n"
-            self.__head = self.__head.next_node
-        return s[:-1]
+        if not self.__head:
+            return ""
+        temp = self.__head
+        string = ""
+        while temp is not None:
+            try:
+                string += str(temp.data)
+                temp = temp.next_node
+                string += "\n"
+            except:
+                pass
+        return string[:-1]
