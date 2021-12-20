@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""Rectangle class that 
+"""Rectangle class that
 Defines a rectangle"""
-
 
 
 class Rectangle:
@@ -39,7 +38,7 @@ class Rectangle:
     def height(self):
         """Retrieves the heigt of a rectangle instance"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """sets the height of a rectangle instance
