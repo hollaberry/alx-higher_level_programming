@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """Rectangle class that defines a rectangle"""
 
+
 class Rectangle:
-    """Represent a rectangle class 
+    """Represent a rectangle class
     Defined by width and height"""
     def __init__(self, width=0, height=0):
         """initialise the attribute width and height"""
