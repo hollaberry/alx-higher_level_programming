@@ -3,6 +3,7 @@
 Defines an empty Rectangle class.
 """
 
-Class Rectangle:
+
+class Rectangle:
     """Empty class."""
     pass

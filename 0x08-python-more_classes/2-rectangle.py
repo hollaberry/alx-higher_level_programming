@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Rectangle class that defines a rectangle"""
 
-Class Rectangle:
+class Rectangle:
     """Represent a rectangle class defined by width and height"""
 
     def __init__(self, width=0, height=0):
