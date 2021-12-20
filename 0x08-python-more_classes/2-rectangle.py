@@ -15,13 +15,13 @@ class Rectangle:
         """Retrieves the width of a Rectangle instance"""
         return(self.__width)
 
-    
+
     @width.setter
     def width(self, value):
         """Sets the height of a Rectangle instance"""
         if type(value) != int:
             raise TypeError("width must be an integer")
-        elif width < 0:
+        elif value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
@@ -38,7 +38,7 @@ class Rectangle:
         elif value < 0:
             raise TypeError("height must be >= 0")
         self.__height = value
-        
+
     """Create public instance method: area"""
     def area(self):
         return (self.__height * self.__width)
