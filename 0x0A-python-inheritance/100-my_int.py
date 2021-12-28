@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module to create class MTINT"""
 
+
 class MyInt(int):
     """Class inheriting from int,
     But reverses the behaviou of != and ==.
@@ -15,4 +16,3 @@ class MyInt(int):
         """Ïnequality becomes equality."""
 
         return super().__eq__(other)
-          
