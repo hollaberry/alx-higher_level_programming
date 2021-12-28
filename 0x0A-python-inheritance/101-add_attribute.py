@@ -4,7 +4,7 @@
 
 def add_attribute(an_obj, an_attr, a_value):
     """Check if an_attr of value a_value can be added to an_obj.
-     
+
     Args:
         - an_obj: object to add the attribute to
         - an_attr: name of the attribute
