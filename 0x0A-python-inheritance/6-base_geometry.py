@@ -2,8 +2,7 @@
 """Module for a class BaseGeometry"""
 
 class BaseGeometry:
-    """Empty class"""
-    pass
+    """Class with public instance method"""
 
 def area(self):
     """Function to rasie an exception"""
