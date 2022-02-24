@@ -5,6 +5,9 @@ of it is to manage id attribute in all future classes to avoid duplicating
 the same code (by extension, same bugs)
 """
 
+import json
+import os
+import csv
 
 class Base:
 
