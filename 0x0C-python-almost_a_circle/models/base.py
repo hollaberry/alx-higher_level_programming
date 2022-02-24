@@ -5,9 +5,11 @@ of it is to manage id attribute in all future classes to avoid duplicating
 the same code (by extension, same bugs)
 """
 
+
 class Base:
+
     """
-     implementation 
+     implementation
     """
     __nb_objects = 0
 
