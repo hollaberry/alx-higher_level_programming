@@ -17,4 +17,4 @@ if __name__ == "__main__":
     if (result.first() is None):
         print("Not found")
     else:
-        print(res[0][0])
+        print(result[0][0])
