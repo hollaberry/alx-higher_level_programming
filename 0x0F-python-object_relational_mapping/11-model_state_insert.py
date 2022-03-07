@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""list State object with 'name' passed
-as arg from db 'hbtn_0e_6_usa'
+"""Add the new state "Louisiana" to db 'hbtn_0e_6_usa'
+print the new 'states.id' after creation
 """
 
 import sys
@@ -13,8 +13,9 @@ if __name__ == "__main__":
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    c1 = State(name = 'Louisiana')
+
+    c1 = State(name='Louisiana')
     session.add(c1)
     session.commit()
 
-    print(state.id)
+    print(c1.id)
