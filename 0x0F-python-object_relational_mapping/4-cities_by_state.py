@@ -20,7 +20,7 @@ if __name__ == "__main__":
     cur.execute(newcmd)
     allcities = cur.fetchall()
     for city in allcities:
-        print(state)
+        print(city)
 
     cur.close()
     db.close()
