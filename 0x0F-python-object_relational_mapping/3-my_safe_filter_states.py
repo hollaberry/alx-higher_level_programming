@@ -13,11 +13,8 @@ if __name__ == "__main__":
                          passwd=sys.argv[2],
                          db=sys.argv[3])
     cur = db.cursor()
-    newcmd = """SELECT id, name
-            FROM states
-            WHERE name=%s
-            ORDER BY id ASC;"""
-    cur.execute(newcmd, (sys.arg[4],))
+    cur.execute("SELECT * FROM states WHERE name=%s\
+                 ORDER BY states.id ASC", (sys.arg[4],))
     stateswithN = cur.fetchall()
 
     for state in stateswithN:
