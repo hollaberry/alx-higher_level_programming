@@ -19,7 +19,7 @@ if __name__ == "__main__":
              ORDER BY cities.id ASC"""
     cur.execute(newcmd, (sys.argv[4],))
     allcities = cur.fetchall()
-    
+
     print(", ".join([city[0] for city in allcities]))
 
     cur.close()
