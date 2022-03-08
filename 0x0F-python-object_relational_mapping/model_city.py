@@ -12,8 +12,8 @@ Base = declarative_base()
 
 class City(Base):
     """Class City"""
-    
-    """Linkage to MySQL table cities """
+
+    """Linkage to MySQL table cities"""
 
     __tablename__ = 'cities'
     id = Column(Integer, autoincrement=True,
