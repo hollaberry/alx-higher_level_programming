@@ -4,8 +4,8 @@ of a city and an instance Base = declaration_base()
 """
 
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String
-from model_state import Base State
+from sqlalchemy import Column, Integer, String, ForeignKey
+from model_state import State
 
 Base = declarative_base()
 
