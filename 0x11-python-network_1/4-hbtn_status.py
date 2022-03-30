@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""script that sends a request to the url, and displays the value
-of the X-request-Id variable found in the header response"""
+"""Fetches https://intranet.hbtn.io/status"""
 
 
 if __name__ == "__main__":
