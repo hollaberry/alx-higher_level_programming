@@ -5,7 +5,7 @@ of the X-request-Id variable found in the header response"""
 
 if __name__ == "__main__":
     import urllib.request
-    import urllib.error import HTTPError
+    from urllib.error import HTTPError
     import sys
 
     try:
