@@ -4,7 +4,7 @@ of the X-request-Id variable found in the header response"""
 
 
 if __name__ == "__main__":
-    import urlib.request
+    import urllib.request
     import sys
 
     with urllib.request.urlopen(sys.argv[1]) as response:
